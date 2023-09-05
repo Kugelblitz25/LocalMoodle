@@ -1,0 +1,25 @@
+{
+    "browsers": {
+        "firefox": {
+            "profile": "C:\\Users\\vighn\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\jdv4a34r.default",
+            "header": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0",
+                "Connection": "keep-alive"
+            }
+        },
+        "chrome": {
+            "profile": "",
+            "header": {
+                "User-Agent": "",
+                "Connection": "keep-alive"
+            }
+        },
+        "edge": {
+            "profile": "",
+            "header": {
+                "User-Agent": "",
+                "Connection": "keep-alive"
+            }
+        }
+    }
+}

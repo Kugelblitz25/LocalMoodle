@@ -38,7 +38,7 @@ Before using the Moodle Scraper, ensure you have the following dependencies inst
 5. Run the script by executing the following command in your terminal:
 
    ```bash
-   python moodle_scraper.py
+   python moodle.py
    ```
     The script will log in to your Moodle account, download course materials, and scrape forum posts.
 

@@ -51,7 +51,9 @@ The config.json file contains configuration settings for the browser preferences
 
 2. Go to the Profiles folder of Firefox(`C:\\Users\\*username*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\`) and create a copy of the the Profile that you saw in previous step.
 
-3. Modify the `config.json` file to include the location of this copied profile.
+3. Search for `my user-agent` in Firefox and copy the result.
+
+4. Modify the `config.json` file to include the location of this copied profile and user-agent.
 
 ## How It Works
 

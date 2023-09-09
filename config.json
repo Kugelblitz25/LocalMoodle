@@ -1,16 +1,17 @@
 {
     "browsers": {
         "firefox": {
-            "profile": "C:\\Users\\*user*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*profile*",
+            "profile": "C:\\Users\\*userName*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*profile*",
             "header": {
                 "User-Agent": "*user-agent*",
                 "Connection": "keep-alive"
             }
         },
         "chrome": {
-            "profile": "",
+            "user-data-dir":"C:\\Users\\*userName*\\AppData\\Local\\Google\\Chrome\\User Data\\",
+            "profile": "*profileName*",
             "header": {
-                "User-Agent": "",
+                "User-Agent": "*user-agent*",
                 "Connection": "keep-alive"
             }
         },

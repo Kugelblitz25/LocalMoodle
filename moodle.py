@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 import os
@@ -28,6 +30,17 @@ class Browser:
             options.add_argument('-headless')
             service=FirefoxService(GeckoDriverManager().install(),log_output='browser.log')
             browser = webdriver.Firefox(options=options,service=service)
+            return browser
+        
+        if name.lower() == 'chrome' or name.lower() == 'c':
+            options = webdriver.ChromeOptions()
+            options.add_argument("--headless")
+            options.add_argument("--no-sandbox")
+            options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            options.add_argument(f"--user-data-dir={config['chrome']['user-data-dir']}")
+            options.add_argument(f"--profile-directory={config['chrome']['profile']}")
+            service = ChromeService(ChromeDriverManager().install(),log_output='browser.log')
+            browser = webdriver.Chrome(service=service,options=options)
             return browser
 
 
@@ -225,10 +238,10 @@ class Moodle:
                 self.Download(docs[doc], self.path+'/'+i+'/')
             self.Forum(i)
 
-
-t1 = time.time()
-md = Moodle(5)
-md.DownloadAll()
-t2 = time.time()
-del md
-print(f'Completed Update in {t2-t1}s.')
+if __name__=='__main__':
+    t1 = time.time()
+    md = Moodle(5,'chrome')
+    md.DownloadAll()
+    t2 = time.time()
+    del md
+    print(f'Completed Update in {t2-t1}s.')

@@ -6,7 +6,9 @@ The Moodle Scraper is a Python script that allows you to automate the process of
 ## Table of Contents
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Configuration](#configuration)
+- [Configuration](#configuration)    
+    - [Firefox](firefox.md)
+    - [Chrome](chrome.md)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
 
@@ -28,14 +30,10 @@ Before using the Moodle Scraper, ensure you have the following dependencies inst
     ```bash
     pip intsll -r requirements.txt
     ```
-3. Make sure you have saved your login details (remember me on this device) in Firefox browser.
 
-    It should look something like this.
-    ![Saved Login](savedLogin.png)
+3. Modify the `config.json` file as described in [Configuration](#configuration).
 
-4. Modify the `config.json` file as described in [Configuration](#configuration).
-
-5. Run the script by executing the following command in your terminal:
+4. Run the script by executing the following command in your terminal:
 
    ```bash
    python moodle.py
@@ -46,14 +44,10 @@ Before using the Moodle Scraper, ensure you have the following dependencies inst
 
 The config.json file contains configuration settings for the browser preferences. You should modify this file to match your specific setup.
 
-1. Go to `about:profiles` in Firefox and note down the profile location.
-![Profile](profile1.png)
+Set up your browser.
 
-2. Go to the Profiles folder of Firefox(`C:\\Users\\*username*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\`) and create a copy of the the Profile that you saw in previous step.
-
-3. Search for `my user-agent` in Firefox and copy the result.
-
-4. Modify the `config.json` file to include the location of this copied profile and user-agent.
+- [Firefox](firefox.md)
+- [Chrome](chrome.md)
 
 ## How It Works
 

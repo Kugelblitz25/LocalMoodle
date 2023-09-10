@@ -33,6 +33,9 @@ Before using the Moodle Scraper, ensure you have the following dependencies inst
 
 3. Modify the `config.json` file as described in [Configuration](#configuration).
 
+4. In moodle.py update the semNo and browser you want to use.
+    ![moodle](run.png)
+
 4. Run the script by executing the following command in your terminal:
 
    ```bash

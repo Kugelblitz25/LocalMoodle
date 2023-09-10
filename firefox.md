@@ -11,7 +11,7 @@
 2. Go to `about:profiles` in Firefox and note down the profile location.
 ![Profile](profile1.png)
 
-3. Go to the Profiles folder of Firefox(`C:\\Users\\*username*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\`) and create a copy of the the Profile that you saw in previous step.
+3. Go to the Profiles folder of Firefox(`C:\\Users\\*username*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\`) and create a copy of the the Profile that you saw in previous step. Name format for this copy is `{*name*}.default`.
 
 4. Open Google and search for `my user-agent` in Firefox and copy the result.
 

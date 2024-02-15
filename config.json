@@ -1,26 +1,4 @@
 {
-    "browsers": {
-        "firefox": {
-            "profile": "C:\\Users\\*userName*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*profile*",
-            "header": {
-                "User-Agent": "*user-agent*",
-                "Connection": "keep-alive"
-            }
-        },
-        "chrome": {
-            "user-data-dir":"C:\\Users\\*userName*\\AppData\\Local\\Google\\Chrome\\User Data\\",
-            "profile": "*profileName*",
-            "header": {
-                "User-Agent": "*user-agent*",
-                "Connection": "keep-alive"
-            }
-        },
-        "edge": {
-            "profile": "",
-            "header": {
-                "User-Agent": "",
-                "Connection": "keep-alive"
-            }
-        }
-    }
+    "browser": "Firefox",
+    "profile": "/home/kugelblitz/snap/firefox/common/.mozilla/firefox/eewuhxqh.default"
 }

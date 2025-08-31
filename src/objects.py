@@ -8,7 +8,7 @@ import re
 
 from bs4 import BeautifulSoup as bs
 
-from src.browser import Browser
+from src.browser import BaseBrowser
 
 
 class Announcement:
@@ -16,7 +16,7 @@ class Announcement:
     Parses Announcements forum
     """
 
-    def __init__(self, url: str, browser: Browser):
+    def __init__(self, url: str, browser: BaseBrowser):
         self.url = url
         self.browser = browser
         self.page = browser.get(url)
@@ -73,7 +73,7 @@ class Course:
     Parses Course.
     """
 
-    def __init__(self, courseInfo: dict, browser: Browser):
+    def __init__(self, courseInfo: dict, browser: BaseBrowser):
         self.courseLoc = courseInfo["loc"]
         self.courseURL = courseInfo["url"]
         self.courseName = courseInfo["name"]

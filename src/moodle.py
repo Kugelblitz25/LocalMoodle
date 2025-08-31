@@ -10,7 +10,7 @@ import shutil
 
 from bs4 import BeautifulSoup as bs
 
-from src.browser import Browser
+from src.browser import BaseBrowser
 from src.objects import Course
 
 MOODLE = "https://moodle.iitb.ac.in/my/courses.php"
@@ -51,7 +51,7 @@ class Moodle:
             f.write(name + "\n" + "--" * 50)
         self.availableDocs[name] = courseInfo
 
-    def getCourses(self, browser: Browser):
+    def getCourses(self, browser: BaseBrowser):
         """
         Get a list of available courses.
         """
